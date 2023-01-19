@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
+
+
 
 html {
   box-sizing: border-box;
@@ -10,9 +12,13 @@ html {
 *::before,
 ::after {
   box-sizing: inherit;
-  /* border: 1px solid black; */
+  /* border: 1px solid yellow; */
 }
-
+img {
+      width: 100%;
+    max-width: 400px;
+     height: auto;
+}
 body {
   margin: 0;
   padding: 0;
@@ -162,7 +168,7 @@ padding-inline: 20px;
 }
 .intro-container p {
   line-height:2;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .comp {
  color: #ff00fc;
@@ -185,11 +191,7 @@ padding-inline: 20px;
   color: #ff00fc;
 }
 .numbers {
-    /* display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr; */
     text-align: center;
-    /* gap: 1rem; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:1rem;
@@ -203,7 +205,6 @@ padding-inline: 20px;
 .digit {
   display: block;
     font-size: 6rem;
-    margin: 20px;
     color: gray;
 }
 .dums {
@@ -232,13 +233,179 @@ padding-inline: 20px;
 }
 .wrap {
   padding-block: 30px;
+  background: #1F2226;
+}
+.wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.test-wrappers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.test::before {
-  content: open-qoute;
+.wearecomu {
+display: grid;
+gap: 3rem;
 }
+.wearecoming-container img {
+  border-radius: 10%;;
+}
+.firstdiv {
+  max-width: 700px;
+  position: relative;
+}
+.firstdivv {
+  max-width: 700px;
+  position: relative;
+}
+.firstdivv p {
+  font-size: 25px;
+  color: #fff;
+}
+.firstdiv span {
+  color: #ff00fc;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.weare {
+  display: block;
+}
+.set {
+  color: #ff00fc;
+}
+
+.firstdiv p {
+  font-size: 25px;
+  color: #fff;
+}
+.testi-wrappers {
+  display: grid;
+  grid-auto-flow:column;
+  justify-content: space-between;
+  align-items: center;
+}
+.testi::before {
+  content: open-quote;
+  font-size: 7rem;
+  position: relative;
+  right: 16px;
+}
+.testi::after {
+  content: close-quote;
+  font-size: 7rem;
+  /* font-size: clamp(20px, 1rem, 3rem);  */
+  left: 16px;
+  position: relative;
+}
+.testi {
+  color: #ff00fc;
+   quotes: "“" "”" "‘" "’";
+   font-size: clamp(2rem, 2.5vw, 2rem); 
+}
+.wearecom {
+  display: grid;
+  gap: 3rem;
+  text-align:center;
+}
+
+.wearecom-container {
+  grid-column: -1;
+}
+.forms {
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  background: gray;
+}
+.forms h1 {
+font-size: 2.5rem;
+color: #ff00fc;
+}
+.forms p {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.form input::placeholder {
+  color: #fff;
+}
+.form input[type=text] {
+  border-radius: 30px;
+  padding-inline: 15px;
+  padding-block: 20px;
+  background: #413e3e;
+  border: none;
+  color: #fff;
+}
+
+.form input[type=text]:nth-child(1) {
+  width: 49%;
+  margin-bottom: 10px;
+}
+.form input[type=text]:nth-child(2) {
+  width: 49%;
+  margin-bottom: 10px;
+}
+.form input[type=text]:nth-child(4) {
+  width: 33%;
+}
+.form input[type=text]:nth-child(5) {
+  width: 54%;
+}
+.form input[type=button] {
+  padding-inline: 40px;
+  padding-block: 15px;
+    border-radius: 25px;
+    background: #ff00fc;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-inline: 10px;
+}
+footer {
+  background: #1F2226;
+  color: #fff;
+}
+.wrapfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.companyname ul li{
+  display: inline-block;
+
+}
+.companyname a {
+  color: #fff;
+}
+.companyname a:last-child {
+  margin-right: 10px;
+}
+.companyname img {
+  height: 30px;
+  width: 30px;
+}
+
 /* media query */
 
+@media only screen and (max-width: 17.5em) {
+  .testi {
+    font-size: 1rem;
+  }
+  .testi::before {
+    right: 3px;
+    font-size: 4rem;
+  }
+  .testi::after {
+    font-size: 3rem;
+    left: 2px;
+  }
+}
 
 @media only screen and (max-width: 36.375em) {
  .numbers {
@@ -251,6 +418,8 @@ padding-inline: 20px;
 
 @media only screen and (max-width: 47.9375em) {
 
+
+ 
   .whatwedo-wrapper h2 {
     display: none;
   }
@@ -286,6 +455,29 @@ padding-inline: 20px;
       grid-template-columns: repeat(2,1fr);
 
     }
+}
+
+@media only screen and (max-width: 71.25em)  {
+  .firstdiv span {
+    display: inline;
+  }
+  .wrapp {
+    display: unset;
+    text-align:center;
+  }
+  .testi-wrappers {
+    display: unset;
+    text-align:center;
+  }
+  .wearecom {
+    width: 100%;
+  }
+  .firstdiv {
+   max-width: 100%;
+  }
+  .firstdivv {
+    max-width: 100%;
+   }
 }
 
 @media only screen and (max-width: 71.25em) {
