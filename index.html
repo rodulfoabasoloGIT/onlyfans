@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="JS/index.js" defer></script>
+    <title>OnlyFans</title>
   </head>
   <body>
     <div class="main-wrapper">
@@ -16,35 +16,43 @@
             <div class="compname">
               <h2>COMPANY NAME</h2>
             </div>
-            <ul class="links">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Video</a></li>
-              <li><a href="">Contact</a></li>
-  
-              <a class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
+            <ul class="link">
+              <li><a href="" class="nav-link">Home</a></li>
+              <li><a href="" class="nav-link">About Us</a></li>
+              <li><a href="" class="nav-link">Services</a></li>
+              <li><a href="" class="nav-link">Video</a></li>
+              <li><a href="" class="nav-link">Contact</a></li>
+              
             </ul>
+
+            <div class="hamburg">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </nav>
         </header>
       </div>
   
      
-  
+         <!-- <nav class="mobile-nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Video</a></li>
+              <li><a href="">Contact</a></li>
+              </ul>
+          </nav> -->
   
       <div class="wrapper">
-        <!-- <video
+        <video
           class="vid"
-          src="/Video/Original-video.mp4"
+          src="Video/Original-video.mp4"
           autoplay
           muted
           loop
           type="video/mp4"
-        ></video> -->
+        ></video>
         <div class="overlay"></div>
         <div class="container">
           <div class="slogan-wrapper">
@@ -68,11 +76,11 @@
     </div>
    
 
-<section>
+<section class="warper">
   <div class="container">
     <div class="wrappers">
       <div class="image-container">
-        <img src="/images/pexels-evg-kowalievska-1170986.jpg" alt="" srcset="">
+        <img src="images/pexels-godisable-jacob-908884.jpg" alt="" srcset="">
     </div>
   
     <div class="intro-container">
@@ -139,8 +147,8 @@
                 </div>
             </div>
             <div class="wearecoming-container">
-              <img src="/images/pexels-evg-kowalievska-1170986.jpg" alt="" srcset="">
-          </div>
+              <img src="images/pexels-igor-starkov-745767.jpg" alt="" srcset="">
+          </div>  
         </div>
 
 
@@ -156,8 +164,12 @@
               </div>
           </div>
           <div class="wearecom-container">
-            <img src="/images/pexels-evg-kowalievska-1170986.jpg" alt="" srcset="">
+            <img src="images/pexels-adam-kontor-881583.jpg" alt="" srcset="">
         </div>
+
+          <div class="wearecom-container-mobile">
+            <img src="images/meow.png" alt="" srcset="">
+          </div>
       </div>      
   </div>
        </div>
@@ -177,7 +189,7 @@
               <input type="text" name="" id="" placeholder="Email Address*">
               <br>
               <input type="text" name="" id="" placeholder="Instagram Handle">
-              <input type="text" name="" id="" placeholder="Message(s)">
+              <input type="text" class="mes" name="" id="" placeholder="Message(s)">
               <input type="button" value="Submit">
             </li>
            </ul>
@@ -187,7 +199,7 @@
 
 
 
-<footer>
+<footer class="wrapfooter">
       <div class="container">
         <div class="wrapfoot">
         <div class="reachout">
@@ -198,18 +210,38 @@
         </div>
 
         <div class="companyname">
+         <div class="introd">
           <h1>COMPANY NAME</h1>
           <P>2022 | All Rights Reserved</P>
+         </div>
           <ul>
-            <li><a href=""><img src="/images/facebook.svg" alt="" srcset=""></a></li>
-            <li><a href=""><img src="/images/twitter.svg" alt="" srcset=""></a></li>
-            <li><a href=""><img src="/images/linkedin.svg" alt="" srcset=""></a></li>
-            <li><a href=""><img src="/images/instagram.svg" alt="" srcset=""></a></li>
+            <li><a href=""><img src="images/facebook.png" alt="" srcset=""></a></li>
+            <li><a href=""><img src="images/twitter.png" alt="" srcset=""></a></li>
+            <li><a href=""><img src="images/linkedin.png" alt="" srcset=""></a></li>
+            <li><a href=""><img src="images/instagram.png" alt="" srcset=""></a></li>
           </ul>
         </div>
       </div>
+
+    <div class="footer-nav">
+       <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Videos</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
     </div>
+
 </footer>
+
+
+  <!-- <footer class="footernav">
+      <div class="container">
+     
+        </div>
+      </div>
+  </footer> -->
 
 </body>
 </html>

@@ -1,7 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
 
-
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -15,9 +13,9 @@ html {
   /* border: 1px solid yellow; */
 }
 img {
-      width: 100%;
-    max-width: 400px;
-     height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 body {
   margin: 0;
@@ -50,8 +48,8 @@ li {
   margin: 0;
 }
 .main-wrapper {
-  position:relative;
-  min-height: 700px;
+  position: relative;
+  min-height: 695px;
   width: 100%;
 }
 
@@ -93,7 +91,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-.links {
+.link {
   display: flex;
   gap: 1rem;
 }
@@ -105,7 +103,7 @@ nav ul li a {
   top: 26rem;
   position: relative;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .slogan-wrapper h2 {
@@ -152,9 +150,15 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
 }
+.warper {
+  background: #1f2226;
+  padding-block: 20px;
+}
 .image-container {
   height: 100%;
-  /* background-color: pink; */
+}
+.intro-container p {
+  color: #fff;
 }
 .image-container img {
   border-radius: 20%;
@@ -162,59 +166,62 @@ nav ul li a {
   height: auto;
 }
 .intro-container {
-  /* background-color: pink; */
   width: 700px;
-padding-inline: 20px;
+  padding-inline: 20px;
+}
+.intr {
+  color: #fff;
 }
 .intro-container p {
-  line-height:2;
+  line-height: 2;
   font-size: 1.5rem;
 }
 .comp {
- color: #ff00fc;
- margin:0;
+  color: #ff00fc;
+  margin: 0;
 }
 
 .whatwedo-wrapper {
-  text-align:center;
+  text-align: center;
   padding-block: 50px;
-  background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url('../images/what-we-do.png');
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../images/what-we-do.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 800px;
   display: grid;
-  align-items:center;
+  align-items: center;
 }
 .whatwedo-wrapper h2 {
   font-size: 2.5rem;
   color: #ff00fc;
 }
 .numbers {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 .first {
   border: 1px solid black;
   padding: 60px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .digit {
   display: block;
-    font-size: 6rem;
-    color: gray;
+  font-size: 6rem;
+  color: gray;
 }
 .dums {
   color: #fff;
-  font-size:1.25rem;
+  font-size: 1.25rem;
 }
 .dum {
   color: #ff00fc;
   font-weight: 700;
-  font-size:1.25rem;
+  font-size: 1.25rem;
 }
 .dumm {
   color: #bdb5b5;
@@ -233,7 +240,7 @@ padding-inline: 20px;
 }
 .wrap {
   padding-block: 30px;
-  background: #1F2226;
+  background: #1f2226;
 }
 .wrapp {
   display: flex;
@@ -247,11 +254,11 @@ padding-inline: 20px;
 }
 
 .wearecomu {
-display: grid;
-gap: 3rem;
+  display: grid;
+  gap: 3rem;
 }
 .wearecoming-container img {
-  border-radius: 10%;;
+  border-radius: 10%;
 }
 .firstdiv {
   max-width: 700px;
@@ -283,7 +290,7 @@ gap: 3rem;
 }
 .testi-wrappers {
   display: grid;
-  grid-auto-flow:column;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -296,23 +303,25 @@ gap: 3rem;
 .testi::after {
   content: close-quote;
   font-size: 7rem;
-  /* font-size: clamp(20px, 1rem, 3rem);  */
   left: 16px;
   position: relative;
 }
 .testi {
   color: #ff00fc;
-   quotes: "“" "”" "‘" "’";
-   font-size: clamp(2rem, 2.5vw, 2rem); 
+  quotes: "“" "”" "‘" "’";
+  font-size: clamp(2rem, 2.5vw, 2rem);
 }
 .wearecom {
   display: grid;
   gap: 3rem;
-  text-align:center;
+  text-align: center;
 }
 
 .wearecom-container {
   grid-column: -1;
+}
+.wearecom-container-mobile {
+  display: none;
 }
 .forms {
   text-align: center;
@@ -320,11 +329,11 @@ gap: 3rem;
   width: 100%;
   display: grid;
   align-items: center;
-  background: gray;
+  background: #5b5d60;
 }
 .forms h1 {
-font-size: 2.5rem;
-color: #ff00fc;
+  font-size: 2rem;
+  color: #ff00fc;
 }
 .forms p {
   font-size: 1.25rem;
@@ -333,7 +342,7 @@ color: #ff00fc;
 .form input::placeholder {
   color: #fff;
 }
-.form input[type=text] {
+.form input[type="text"] {
   border-radius: 30px;
   padding-inline: 15px;
   padding-block: 20px;
@@ -342,43 +351,62 @@ color: #ff00fc;
   color: #fff;
 }
 
-.form input[type=text]:nth-child(1) {
+.form input[type="text"]:nth-child(1) {
   width: 49%;
   margin-bottom: 10px;
 }
-.form input[type=text]:nth-child(2) {
+.form input[type="text"]:nth-child(2) {
   width: 49%;
   margin-bottom: 10px;
 }
-.form input[type=text]:nth-child(4) {
+.form input[type="text"]:nth-child(4) {
   width: 33%;
+  margin-bottom: 10px;
 }
-.form input[type=text]:nth-child(5) {
+.form input[type="text"]:nth-child(5) {
   width: 54%;
+  margin-bottom: 10px;
 }
-.form input[type=button] {
+.form input[type="button"] {
   padding-inline: 40px;
   padding-block: 15px;
-    border-radius: 25px;
-    background: #ff00fc;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    margin-inline: 10px;
-}
-footer {
-  background: #1F2226;
+  border-radius: 25px;
+  background: #ff00fc;
   color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-inline: 10px;
+}
+.wrapfooter {
+  background: #1f2226;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  align-items: center;
 }
 .wrapfoot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  border-bottom: 1px solid #fff;
+  margin-bottom: 40px;
 }
-.companyname ul li{
+.reachout h1 {
+  color: #ff00fc;
+}
+.reachout p {
+  line-height: 2;
+  font-size: 15px;
+}
+.companyname {
+  line-height: 4;
+  text-align: end;
+}
+.companyname h1 {
+  color: #ff00fc;
+}
+.companyname ul li {
   display: inline-block;
-
 }
 .companyname a {
   color: #fff;
@@ -390,8 +418,39 @@ footer {
   height: 30px;
   width: 30px;
 }
+.footer-nav {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+.footer-nav ul li {
+  display: inline-block;
+}
+.footer-nav li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-nav ul li a {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.hamburg {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  background-color: #ff00fc;
+}
 
 /* media query */
+
+/* 280 */
 
 @media only screen and (max-width: 17.5em) {
   .testi {
@@ -405,21 +464,41 @@ footer {
     font-size: 3rem;
     left: 2px;
   }
+  .introd h1 {
+    font-size: 1.25rem !important;
+  }
 }
 
+@media only screen and (max-width: 25.6875em) {
+  .companyname {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+
+/* 582 */
 @media only screen and (max-width: 36.375em) {
- .numbers {
-  display: block;
- }
- .first {
-  margin: 10px;
- }
+  .numbers {
+    display: block;
+  }
+  .first {
+    margin: 10px;
+  }
+  .firstdivv {
+    display: none;
+  }
+
+  .wearecom-container img {
+    display: none;
+  }
+
+  .wearecom-container-mobile {
+    display: block;
+  }
 }
 
+/* 767 */
 @media only screen and (max-width: 47.9375em) {
-
-
- 
   .whatwedo-wrapper h2 {
     display: none;
   }
@@ -427,61 +506,141 @@ footer {
     display: none;
   }
 
-    .slogan-wrapper {
-      display:unset;
-    }
+  .slogan-wrapper {
+    display: unset;
+  }
 
-    .links li {
-      display: none;
-    }
+  .image-container {
+    display: none;
+  }
 
-    .hamburger > * {
-      width: 32px;
-      height: 3px;
-      background-color: #ff00fc;
-      display: block;
-      margin-bottom: 5px;
-    }
+  .intro-container {
+    text-align: center;
+  }
 
-    .image-container {
-      display: none;
-    }
+  .numbers {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .intro-container {
-      text-align: center;
-    }
+  .footer-nav {
+    display: none;
+  }
+  .hamburg {
+    display: block;
+  }
+  .hamburg.active {
+    position: fixed;
+    right: 25px;
+  }
 
-    .numbers {
-      grid-template-columns: repeat(2,1fr);
+  .hamburg.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburg.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburg.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    }
+  .link {
+    left: -100%;
+    top: 0%;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 1.5);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .link li {
+    margin-bottom: 10px;
+  }
+  .link.active {
+    left: 0;
+    overflow: hidden;
+  }
 }
 
-@media only screen and (max-width: 71.25em)  {
+@media only screen and (max-width: 71.25em) {
   .firstdiv span {
     display: inline;
   }
   .wrapp {
     display: unset;
-    text-align:center;
+    text-align: center;
   }
   .testi-wrappers {
     display: unset;
-    text-align:center;
+    text-align: center;
   }
   .wearecom {
     width: 100%;
   }
   .firstdiv {
-   max-width: 100%;
+    max-width: 100%;
   }
   .firstdivv {
     max-width: 100%;
-   }
+  }
+  .numbers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wrapfoot {
+    display: unset;
+  }
+  .wrapfooter {
+    align-items: unset;
+  }
+  .reachout {
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .companyname {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .introd {
+    line-height: 1;
+    text-align: start;
+  }
+  .introd h1 {
+    font-size: 1.375rem;
+  }
+  .footer-nav {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 71.25em) {
-  .numbers {
-    grid-template-columns: repeat(2,1fr);
+@media only screen and (max-width: 74.3125em) {
+  .form input[type="text"] {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  .form input[type="text"]:nth-child(1) {
+    width: 70%;
+  }
+  .form input[type="text"]:nth-child(2) {
+    width: 70%;
+  }
+  .form input[type="text"]:nth-child(4) {
+    width: 70%;
+  }
+  .form input[type="text"]:nth-child(5) {
+    width: 70%;
+  }
+
+  .form input[type="text"]:nth-child(5) {
+    height: 150px;
+    padding-inline: 10px;
   }
 }
